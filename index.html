@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Linking the css file -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Using font awesome cdn for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Project Title -->
+    <h1 class="main-title">Expense Tracker</h1>
+    <!-- Main content -->
+    <div class="container">
+        <div class="left-container">
+            <h4>Balance</h4>
+            <h1 class="balance" id="balance">Rs.0.00</h1>
+            <div class="income-expense-container">
+                <div>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <h4>Income</h4>
+                    <p class="bal-plus" id="bal-plus">+Rs.0.00</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-trend-down"></i>
+                    <h4>Expense</h4>
+                    <p class="bal-minus" id="bal-minus">-Rs.0.00</p>
+                </div>
+            </div>
+            <!-- Transaction inputs Container -->
+            <h3>Add new Transaction</h3>
+            <form id="form">
+                <div class="form-control">
+                    <label for="text">Title</label>
+                    <input type="text" class="title" id="title" placeholder="Enter your transaction title">
+                </div>
+                <div class="form-control">
+                    <label for="amount">Amount (Add - sign for Expenses)</label>
+                    <input type="text" class="amount" id="amount" placeholder="E.g. -200 for expenses, 200 for income">
+                </div>
+                <button class="add-btn">Add Transaction</button>
+            </form>
+        </div>
+        <!-- Transaction History Container -->
+        <div class="right-container">
+            <h3>History</h3>
+            <ul class="list" id="list">
+                <!-- 
+                    This section is added through JavaScript
+                 -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Linking script file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
